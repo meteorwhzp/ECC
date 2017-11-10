@@ -1,0 +1,13 @@
+/log/
+bin/bonus-conf
+pkg/
+.DS_Store
+.idea/
+*.iml
+output/
+CMakeLists.txt
+.statsd/
+tools/logtail
+*.exe
+version/*
+auto_version/*

@@ -1,0 +1,15 @@
+{
+    "workerCycle": 1,
+    "services": {
+        "canal": {
+            "hosts": [
+                "100.69.112.19:8506",
+                "100.69.111.15:8506",
+                "100.69.84.52:8506"
+            ],
+            "healthyThreshold": 10,
+            "minHealthyRatio": 0.67,
+            "maxCooldownTime": 60
+        }
+    }
+}

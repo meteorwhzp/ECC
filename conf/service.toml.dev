@@ -1,0 +1,34 @@
+### toml 配置管理 https://github.com/toml-lang/toml
+### 该文件中的配置要与 config.go/TConf 结构对应;且在 config.go/checkConfigValid 做配置有效性检查
+[server]
+port = 9898
+timeout = 1000 #ms
+
+[custom]
+nodeconf = "./conf/nodemgr.json" #注意区分集群
+datapath = "./data/"
+
+[codis]
+host = ["10.242.177.121:3000",
+        "10.209.26.101:3000",
+        "10.242.184.138:3000"]
+connectTimeoutMs=50
+writeTimeoutMs=500
+readTimeoutMs=500
+maxIdle=0
+maxActive=10000
+idleTimeoutS=60
+
+#注意区分集群
+[canal]
+serviceName = "canal"
+connTimeout = 100
+serveTimeout = 200
+url = "/canal/get_feature_count?" #前后的符号一定要有
+
+#[kafka]
+#brokers = ""
+#topic_1 = "hello"
+#topic_2 = "world"
+
+#[biz]
